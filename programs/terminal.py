@@ -16,7 +16,11 @@ if loginCreds == AccessKey:
             toAdd = input('What to add?')
             seconds = time.time()
             local_time = time.ctime(seconds)
-
+        elif createFile == 'N':
+            f = open(researchFiles + fileCreateName + '.txt', 'a')
+            toAdd = input('What to add?')
+            seconds = time.time()
+            local_time = time.ctime(seconds)
             
             f.write('\n' + local_time + '\n' + toAdd)
 
